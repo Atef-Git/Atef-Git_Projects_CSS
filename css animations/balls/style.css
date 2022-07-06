@@ -1,0 +1,58 @@
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #8800ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 300px;
+  animation: move 2s linear infinite;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+.container .one {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.container .three {
+  margin-top: 50px;
+}
+.container .one,
+.container .three {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.one .ball:first-child {
+  margin-right: -15px;
+}
+.two .ball:first-child {
+  margin-right: 110px;
+}
+.three .ball:first-child {
+  margin-right: -15px;
+}
+@keyframes move {
+  100% {
+    transform: rotate(360deg);
+  }
+}

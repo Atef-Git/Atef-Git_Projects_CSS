@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
+}
+.container .square {
+  width: 50px;
+  height: 50px;
+  background: #0065ff;
+  position: absolute;
+  animation: move 1s linear infinite;
+}
+@keyframes move {
+  0% {
+    background-color: #3ba128;
+  }
+  12.5% {
+    background-color: #3ba128;
+  }
+  12.625% {
+    background-color: #0065ff;
+  }
+  100% {
+    background-color: #0065ff;
+  }
+}

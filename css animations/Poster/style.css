@@ -1,0 +1,113 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  --main-color: #fbde68;
+  --dark-color: #010e14;
+}
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--main-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans Arabic";
+}
+/* start container */
+.container {
+  border: 12px solid #fff;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    var(--dark-color) 50%,
+    var(--main-color) 50%,
+    var(--main-color) 100%
+  );
+}
+.img {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  transform: scaleX(-1);
+}
+.name {
+  position: aboslute;
+}
+.full-text {
+  width: calc(800px - 412px);
+  position: relative;
+}
+.full-text .ads h1 {
+  font-size: 55px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  margin-top: -20px;
+  text-shadow: 0px 0px 3px #333;
+  width: 150px;
+}
+.overlay {
+  width: 100%;
+  position: absolute;
+  height: 60%;
+  top: 170px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px #333;
+}
+.booking {
+  width: 300px;
+  height: 50px;
+  background-color: #0065ff;
+  position: absolute;
+  top: 80%;
+  right: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px #000;
+}
+.booking h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: -5px;
+  text-shadow: 0px 2px 4px #333;
+}
+.title {
+  position: absolute;
+  right: 10px;
+  top: 320px;
+}
+.title h3 {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: bold;
+}
+.full-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 160px;
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  opacity: 0.4;
+}

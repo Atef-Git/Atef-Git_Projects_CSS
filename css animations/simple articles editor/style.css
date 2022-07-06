@@ -1,0 +1,89 @@
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #eee;
+  padding: 20px;
+  overflow: hidden;
+}
+.options {
+  background-color: #f6f3f7;
+  width: 100%;
+  height: auto;
+  padding: 8px 12px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+select {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: 16px 20px;
+  width: 20%;
+  border: none;
+  box-shadow: 0px 0px 6px #ddd inset;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.para {
+  padding: 12px;
+}
+.size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.fbold {
+  margin-right: 10px;
+}
+.fbold,
+.invert,
+.inc,
+.dec {
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.invert {
+  margin: 0px 0px 0px 10px;
+}
+#total {
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  background: white;
+  border: none;
+  padding: 10px 0px;
+}
+.fbold:hover,
+.inc:hover,
+.dec:hover,
+.invert:hover {
+  background-color: #ddd;
+}
+.bold {
+  font-weight: bold;
+}
+.changeColors {
+  background: red;
+  color: #fff;
+}

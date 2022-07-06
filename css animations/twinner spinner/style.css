@@ -1,0 +1,42 @@
+body {
+  background-color: #2831dc;
+  max-height: 100vh;
+}
+.loader {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  font-size: 150px;
+  margin: 250px auto 250px auto;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  top: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-width: 100px;
+  border-style: double;
+  border-color: transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation: move 1s infinite;
+  margin: 0;
+}
+.loader::after {
+  border-left-color: white;
+  left: 0;
+}
+.loader::before {
+  border-right-color: white;
+  left: 0;
+  animation-delay: -0.25s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(360deg);
+  }
+}

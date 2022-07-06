@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Articles Editor | Home Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="options">
+      <select name="fonts" id="fonts">
+        <option value="" >Choose Font</option>
+        <option value="Georgia, serif">Georgia </option>
+        <option value="monospace">Monospace </option>
+        <option value="fantasy">Fantasy </option>
+        <option value="cursive">Cursive </option>
+        <option value="Open Sans">Open Sans </option>
+      </select>
+      <button class="fbold">B</button>
+      <div class="size">
+        <button class="dec" onclick="dec()">-</button>
+        <input type="text" id="total" disabled name="" value="16">
+        <button class="inc" onclick="inc()">+</button>
+      </div>
+      <button class="invert">Invert colors</button>
+    </div>
+    <div class="para">
+      <p style="font-size:16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptates sed iure natus rerum amet maiores nobis dignissimos, odio exercitationem culpa id magni fuga iste. Voluptate obcaecati maxime animi quibusdam?</p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

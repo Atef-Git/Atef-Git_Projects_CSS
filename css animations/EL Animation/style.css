@@ -1,0 +1,145 @@
+:root {
+  --main-color: #323234;
+  --yellow-color: #fea604;
+}
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eee;
+}
+.container {
+  position: relative;
+  padding: 40px 50px;
+  width: 800px;
+  height: 600px;
+  background: #fff;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: calc(100% - 160px);
+  border-left: 70px solid var(--main-color);
+  border-bottom: 70px solid var(--main-color);
+  left: 52%;
+}
+.container::before {
+  content: "";
+  width: 30%;
+  height: calc(100% - 230px);
+  position: absolute;
+  border-left: solid 70px var(--main-color);
+  border-bottom: solid 70px var(--main-color);
+  border-top: solid 70px var(--main-color);
+}
+span {
+  width: 30%;
+  height: 70px;
+  background: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 119px;
+  position: absolute;
+}
+.square,
+.square2 {
+  position: absolute;
+  background-color: var(--yellow-color);
+  width: 50px;
+  height: 54px;
+  z-index: 1;
+}
+.square {
+  left: 38%;
+  top: 8%;
+  /* animation-delay: 10s; */
+  animation: move1 6s linear 5s 1;
+}
+.square2 {
+  left: 83.5%;
+  top: 81.5%;
+  animation: move2 8s linear 0.4s 1;
+}
+@keyframes move1 {
+  0% {
+    left: 38%;
+    top: 8%;
+  }
+  8.3% {
+    left: 60px;
+    top: 8%;
+  }
+  16.6% {
+    left: 60px;
+    top: 45.5%;
+  }
+  24.9% {
+    left: 38%;
+    top: 45.5%;
+  }
+  33.2% {
+    left: 60px;
+    top: 45.5%;
+  }
+  41.5% {
+    top: 82%;
+    left: 60px;
+  }
+  49.8% {
+    top: 81.5%;
+    left: 38%;
+  }
+  58.1% {
+    top: 81.5%;
+    left: 60px;
+  }
+  66.4% {
+    left: 60px;
+    top: 45.5%;
+  }
+  74.7% {
+    left: 38%;
+    top: 45.5%;
+  }
+  83% {
+    left: 60px;
+    top: 45.5%;
+  }
+  91% {
+    left: 60px;
+    top: 8%;
+  }
+  100% {
+    left: 38%;
+    top: 8%;
+  }
+}
+@keyframes move2 {
+  0% {
+    left: 83.5%;
+    top: 81.5%;
+  }
+  25% {
+    left: 53.5%;
+    top: 81.5%;
+  }
+  50% {
+    top: 8%;
+    left: 426px;
+    opacity: 1;
+  }
+  100% {
+    top: 8%;
+    left: 426px;
+    opacity: 0;
+  }
+}

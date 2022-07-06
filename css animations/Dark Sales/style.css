@@ -1,0 +1,118 @@
+:root {
+  --dark-color: #242424;
+  --second-dark-color: #2a2a2a;
+  --blue-color: #03a9f4;
+}
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* start active  */
+.active {
+  background-color: var(--blue-color) !important;
+  color: #fff !important;
+  border-top: #fff solid 1px !important;
+}
+.card.active {
+  height: calc(600px + 60px);
+  border: none !important;
+}
+.card.active .title {
+  padding-top: 51px;
+}
+.active .info .active:last-child {
+  border-bottom: 1px solid #fff !important;
+}
+.active .order {
+  border-color: transparent !important;
+}
+/* end active */
+.container {
+  border: 1px solid #eee;
+  width: 90%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 100%;
+  flex: 25%;
+  background-color: var(--dark-color);
+  padding: 50px 0px;
+  text-align: center;
+}
+.card:not(:last-child) {
+  border-right: 1px solid #383838;
+}
+.card .title {
+  padding: 20px 20px;
+}
+.card .title h2 {
+  color: #fff;
+  font-size: 27px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.card .title .price {
+  font-size: 21px;
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+}
+.dollar {
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  left: 108px;
+  top: -5px;
+}
+.month {
+  font-weight: normal !important;
+  font-size: 13px !important;
+}
+/* info */
+.info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.info ul li {
+  width: 100%;
+  padding: 20px 0px;
+  color: #fff;
+  border-top: solid 1px #383838;
+  color: #6c6c6a;
+}
+.info ul li:nth-child(even) {
+  background-color: var(--second-dark-color);
+}
+.order button {
+  padding: 12px 20px;
+  background: var(--dark-color);
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.order button:hover {
+  background: #383838;
+}
+.card:nth-child(3) .order button {
+  background: transparent;
+}

@@ -1,0 +1,174 @@
+:root {
+  --blue-color: #2196f3;
+  --green-color: #009688;
+  --red-color: #e91e63;
+  --gray-color: #7e7e7e;
+}
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+}
+.container {
+  width: 80%;
+  height: auto;
+  background-color: #f6f6f6;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.save {
+  background-color: var(--blue-color);
+  width: fit-content;
+  padding: 10px 30px 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: 85%;
+  margin-bottom: 20px;
+}
+.save::before {
+  width: 0;
+  content: "";
+  height: 0;
+  border-width: 19px;
+  border-color: transparent #f6f6f6 transparent transparent;
+  border-style: solid;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.card .basic .title {
+  background-color: #f44336;
+  padding: 18px;
+}
+.card .prof .title {
+  background-color: #2196f3;
+  padding: 18px;
+}
+.card div {
+  width: 45%;
+  max-width: 100%;
+}
+.card ul li {
+  width: 100%;
+  padding: 17px 12px;
+  background-color: white;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.card ul li:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
+ul {
+  padding: 8px 0px;
+  background-color: white;
+  list-style: none;
+}
+.title {
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  border-radius: 6px 5px 0 0;
+  padding: 10px;
+}
+.right {
+  width: 20px;
+  background: #04988a;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  right: 6px;
+}
+.right::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: white;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(41deg);
+}
+.right::after {
+  top: 44%;
+  content: "";
+  width: 3px;
+  height: 8px;
+  background: white;
+  position: absolute;
+  border-radius: 5px 5px 5px;
+  left: 18%;
+}
+.wrong {
+  width: 20px;
+  background: var(--red-color);
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  right: 6px;
+}
+.wrong::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: white;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(41deg);
+}
+.wrong::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: white;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-41deg);
+}
+.ques {
+  background-color: var(--gray-color);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  right: -50px;
+  top: 5px;
+}
+.ques::before {
+  position: absolute;
+  content: "?";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
