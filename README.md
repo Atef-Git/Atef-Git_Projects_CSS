@@ -5,3 +5,4 @@
 Projects Demo :
 <br>
               1) <a href="css animations/Dark Sales/index.html">First Project</a>
+              2) <a href="css animations/EL Animation/index.html">El Animation</a>
